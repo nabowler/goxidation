@@ -20,7 +20,7 @@ Mimic base protectons of the Rust Result and Option types:
 
 - `Result[T]` and `Option[T]` are implemented as Interfaces.
   - These interfaces provide methods to determine which variant an instance is
-  - A `GetOr(T) T` convience method for retrieving the contained value or the provided default value
+  - A `GetOr(T) T` convenience method for retrieving the contained value or the provided default value
   - And an unexported method that references an internal type prevents external implementations of `Result[T]`, `Option[T]`, and the variant interferfaces
 - Implementation types of `Result[T]` and `Option[T]` are unexported to prevent misuse
 - `Ok(T)` and `Err[T](error)` instantiate the `Result[T]` implementation types
